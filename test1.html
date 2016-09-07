@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Magnetic - Stunning Responsive HTML5/CSS3 Photography Template</title>
+	<meta charset="utf-8">
+	<meta name="author" content="pixelhint.com">
+	<meta name="description" content="Magnetic is a stunning responsive HTML5/CSS3 photography/portfolio website  template"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+	<header>
+		<div class="logo">
+			<a href="index.html"><img src="img/logo2.png" width="200" height="125" title="Magnetic" alt="Magnetic"/></a>
+		</div><!-- end logo -->
+
+		<div id="menu_icon"></div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">The Team</a></li>
+				<li><a href="#">Journal</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav><!-- end navigation menu -->
+
+
+	</header><!-- end header -->
+
+	<section class="main clearfix">
+
+
+
+		<section class="wrapper">
+			<div class="content">
+				<img src="/img/stattlove1.png" title="stats" alt="stats">
+				<p>Nunc pellentesque mauris ut magna pulvinar, quis fermentum tellus pulvinar. Curabitur ut fermentum quam. Nam tincidunt sagittis neque in elementum. Fusce convallis cursus porta. Curabitur dapibus pretium leo, at laoreet magna ullamcorper ac. Integer quam nulla, fringilla ac imperdiet at, consequat vel leo. Quisque non semper justo, eu aliquam velit. Pellentesque rhoncus, quam ac fringilla euismod, ligula diam congue orci, id cursus dui velit quis ligula.</p>
+
+
+				<h2>Nulla nec pellentesque tempus, ipsum arcu aliquam tortor.</h2>
+
+			</div><!-- end content -->
+<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/chalk.js"></script>
+		
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "serial",
+					"categoryField": "category",
+					"startDuration": 1,
+					"theme": "chalk",
+					"categoryAxis": {
+						"gridPosition": "start"
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"balloonColor": "#FFFF00",
+							"balloonText": "[[title]] of [[category]]:[[value]]",
+							"fillAlphas": 1,
+							"fillColors": "#0E3694",
+							"fontSize": 0,
+							"id": "AmGraph-1",
+							"negativeFillColors": "#FFFF00",
+							"title": "RT",
+							"type": "column",
+							"valueField": "column-1"
+						},
+						{
+							"balloonText": "[[title]] of [[category]]:[[value]]",
+							"fillAlphas": 1,
+							"fillColors": "#FFFF00",
+							"id": "AmGraph-2",
+							"title": "graph 2",
+							"type": "column",
+							"valueField": "column-2"
+						},
+						{
+							"id": "AmGraph-3",
+							"title": "graph 3",
+							"valueField": "column-3"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"id": "ValueAxis-1",
+							"stackType": "100%",
+							"title": ""
+						}
+					],
+					"allLabels": [],
+					"balloon": {},
+					"titles": [
+						{
+							"id": "Title-1",
+							"size": 15,
+							"text": "Respiratory Therapy Stats"
+						}
+					],
+					"dataProvider": [
+						{
+							"category": "XP",
+							"column-1": "50",
+							"column-2": "50"
+						},
+						{
+							"category": "ABGs",
+							"column-1": "90",
+							"column-2": "10"
+						},
+						{
+							"category": "Nebs",
+							"column-1": "95",
+							"column-2": "5"
+						},
+						{
+							"category": "Intubation",
+							"column-1": "30",
+							"column-2": "70"
+						},
+						{
+							"category": "PFT",
+							"column-1": "10",
+							"column-2": "90"
+						},
+						{
+							"category": "Bronch",
+							"column-1": "10",
+							"column-2": "90"
+						},
+						{
+							"category": "Alines",
+							"column-1": "40",
+							"column-2": "60"
+						}
+					]
+				}
+			);
+		</script>
+
+		<div id="chartdiv" style="width: 100%; height: 400px; background-color: #282828;" ></div>
+
+		</section>
+	</section><!-- end main -->
+	
+</body>
+</html>
